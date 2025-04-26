@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cart.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="nav-logo">
+            <a href="#"><img src="assets/amazon_logo.png" alt="Amazon Logo" class="logo-img" /></a>
+          </div>
+    
+          <div class="nav-address border">
+            <p class="add-first border">Deliver to</p>
+            <div class="add-icon">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="add-sec border">United Kingdom</p>
+            </div>
+          </div>
+    
+          <div class="nav-search">
+            <select class="search-select">
+              <option>All</option>
+              <option>All Categories</option>
+              <option>Apps</option>
+              <option>Beauty</option>
+              <option>Car</option>
+              <option>More...</option>
+            </select>
+            <input placeholder="Search Amazon" class="search-input" />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+    
+          <div class="nav-reg">
+            <i class="fa-solid fa-flag" style="margin-right: 3px;"></i>
+            <p class="en">EN</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+    
+          <div class="nav-sign border">
+            <p><span>Hello, Sign in</span></p>
+            <p class="nav-second">Account & Lists</p>
+          </div>
+    
+          <div class="nav-return border">
+            <p><span>Returns</span></p>
+            <p class="nav-second">Orders</p>
+          </div>
+    
+          <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i> Cart
+          </div>
+        </div>
+    
+        <div class="panel">
+          <div class="panel-all border">
+            <i class="fa-solid fa-bars"></i> All
+          </div>
+          <div class="panel-ops">
+            <p class="border">Today's Deals</p>
+            <p class="border">Customer Service</p>
+            <p class="border">Registry</p>
+            <p class="border">Gift Cards</p>
+            <p class="border">Sell</p>
+          </div>
+          <div class="panel-deals border">Shop Deals in Electronics</div>
+        </div>
+      </header>
+      <main class="cart-container">
+        <h1>Shopping Cart</h1>
+        <div class="cart-content">
+          <!-- Left section: Cart items -->
+          <div class="cart-items">
+            <div class="cart-item">
+              <img src="./assets/ipad_img.jpg" alt="iPad" class="item-img">
+              <div class="item-details">
+                <h2>Apple iPad (9th Generation)...</h2>
+                <p class="badge">#1 Best Seller <span>in Computer Tablets</span></p>
+                <p class="status">In Stock</p>
+                <p>FREE delivery <b>Mon, Jan 29</b> available at checkout</p>
+                <p>FREE Returns <i class="fa-solid fa-circle-info"></i></p>
+                <p>Style: WiFi</p>
+                <p>Size: 64GB</p>
+                <p>Color: Space Gray</p>
+                <label for="qty1">Qty:</label>
+                <select id="qty1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <div class="actions">
+                  <a href="#">Delete</a> | <a href="#">Save for later</a> | <a href="#">Compare with similar items</a> | <a href="#">Share</a>
+                </div>
+              </div>
+              <div class="item-price">$249.00</div>
+            </div>
+      
+            <div class="cart-item">
+              <img src="./assets/product_img.jpg" alt="Headset" class="item-img">
+              <div class="item-details">
+                <h2>BENGOO G9000 Stereo Gaming Headset...</h2>
+                <p class="badge">#1 Best Seller <span>in PC Game Headsets</span></p>
+                <p class="status">In Stock</p>
+                <p>FREE delivery <b>Mon, Jan 29</b> available at checkout</p>
+                <p>FREE Returns <i class="fa-solid fa-circle-info"></i></p>
+                <p>Style: Wired</p>
+                <p>Color: Blue</p>
+                <label for="qty2">Qty:</label>
+                <select id="qty2">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <div class="actions">
+                  <a href="#">Delete</a> | <a href="#">Save for later</a> | <a href="#">Compare with similar items</a> | <a href="#">Share</a>
+                </div>
+              </div>
+              <div class="item-price">$25.99</div>
+            </div>
+          </div>
+      
+          <!-- Right section: Checkout summary -->
+          <div class="cart-summary">
+            <div class="summary-box">
+              <p><i class="fa-solid fa-check"></i> Your order qualifies for <b>FREE Shipping</b>.</p>
+              <label><input type="checkbox"> This order contains a gift</label>
+              <p><b>Subtotal (2 items): $274.99</b></p>
+              <button class="checkout-btn">Proceed to checkout</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+    
+</body>
+</html>
